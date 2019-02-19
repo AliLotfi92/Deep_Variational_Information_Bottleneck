@@ -11,5 +11,7 @@ For some especial cases there are some closed form solutions but in general it i
 There are some approaches based on families of deep neural networks. Here I implemented this popular one. 
 https://arxiv.org/abs/1612.00410
 
+The code is based on Tensorflow! ;)
+
 
 
