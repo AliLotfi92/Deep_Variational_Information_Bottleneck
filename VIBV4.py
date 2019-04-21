@@ -112,7 +112,7 @@ with tf.name_scope('aproximation_to_prior'):
 with tf.name_scope('Class_Loss'):
     class_loss = tf.losses.softmax_cross_entropy(logits=pred, onehot_labels=labels)
 
-BETA = 0
+BETA = 0.001
 
 with tf.name_scope('Info_Loss'):
     info_loss = tf.reduce_sum(tf.reduce_mean(ds.kl_divergence(encoding, prior), 0)) /math.log(2)
