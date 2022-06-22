@@ -1,4 +1,4 @@
-# Deep-Variational-Information-Bottleneck
+# Deep Variational Information Bottleneck
 
 This repository provides the implementation of Deep Variational Information Bottleneck. The main idea DVIB of is to impose a bottleneck (here in the dimension of latent space) through which only necessary information for the reconstruction of $X$ can pass. I tried to implement this in the simplest from so that _Information Bottleneck_ can be easily leveraged as a regularizer or metric for other projects.
 
