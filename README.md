@@ -1,17 +1,15 @@
 # Deep-Variational-Information-Bottleneck
 
-Here in this repository you can find a simple implementation of Deep variational Information Bottleneck. The idea of information bottleneck is very simple.
+This repository provides the implementation of Deep Variational Information Bottleneck. The main idea DVIB of is to impose a bottleneck (here in the dimension of latent space) through which only necessary information for the reconstruction of $X$ can pass. I tried to implement this as simply as possible so that Information Bottleneck can be easily leveraged as a regularizer or metric for other projects.
 
-You have an input $X$, 
-You have its corresponding labels $Y$,
-You look for a latent variable (clearly much less dimension as $X$) $Z$ by maximizing mutual information between $Z$ and $Y$ ($I(Z, Y)$), meanwhile you have to minimize $I(Z, X)$. 
+### Requirements
+- $X$ is the input, 
+- $Y$ is the label,
+- We look for a latent variable $Z$ that maximizes the mutual information between $Z$ and $Y$ ($I(Z, Y)$), meanwhile, it has to minimize $I(Z, X)$. 
+- For more detials and theoritical proofs please look at https://arxiv.org/abs/1612.00410
 
-For some especial cases there are some closed form solutions but in general it is an NP-hard optimization. 
-
-There are some approaches based on families of deep neural networks. Here I implemented this popular one. 
-https://arxiv.org/abs/1612.00410
-
-The code is based on Tensorflow! ;)
-
-
+### How to run
+```bash
+python VIBV4.py
+```
 
