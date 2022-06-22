@@ -6,7 +6,7 @@ This repository provides the implementation of Deep Variational Information Bott
 - $X$ is the input, 
 - $Y$ is the label,
 - We look for a latent variable $Z$ that maximizes the mutual information $I(Z, Y)$, meanwhile, it has to minimize $I(Z, X)$. 
-- For more detials and theoritical proofs please look at https://arxiv.org/abs/1612.00410
+- For more detials and theoritical proofs please check https://arxiv.org/abs/1612.00410
 
 ### How to run
 ```bash
